@@ -1,0 +1,12 @@
+<div class="station-header"><h2><%= @station.name %></h2></div>
+
+<div class="add-station"><a href="/add/station/<%= @station.id %>">Add to MyStations</a></div>
+
+
+<div id="map-canvas"></div>
+
+
+
+
+<input type=hidden id="latitude" value="<%= @station.latitude %>">
+<input type=hidden id="longitude" value="<%= @station.longitude %>">

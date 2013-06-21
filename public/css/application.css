@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+/*  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;*/
+  width: 100%;
+  height: 50px;
+  background-color: gray;
+}
+
+#title {
+  display: inline;
+}
+
+#title a {
+}
+
+#title a, #title a:hover, #title a:visited {
+  color: white;
+  font-size: 28px;
+  line-height: 50px;
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+
+#nav-links {
+  display: inline;
+}
+
+#nav-links div {
+  display: inline;
+  /*margin-right: 20px;*/
+}
+
+#nav-links a, #nav-links a:visited {
+  color: white;
+  font-size: 16px;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+#nav-links a:hover {
+  color: yellow;
+}
+
+.container {
+  /*padding-top: 50px;*/
+  padding: 0px 20px 20px 20px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+form input{
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  width: 200px;
+}
+
+.button {
+  width: auto;
+}
+
+th {
+  text-align: left;
+}
+
+.vertical-map {
+  height: 500px;
+  width: 26px;
+  float: left;
+  margin-right: 10px;
+}
+
+.line {
+  height: 70px;
+  font-size: 40px;
+  margin: 10px auto;
+  width: 400px;
+  padding-left: 20px;
+  box-shadow: 3px 3px 2px #b5b5b5;
+}
+
+.line a {
+  text-decoration: none;
+  color: black;
+}
+
+.line h2 {
+  margin: 0;
+}
+
+.line-header {
+  font-size: 40px;
+  padding-left: 20px;
+}
+
+.station-header {
+  font-size: 40px;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.add-station {
+  float: right;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.station-name {
+  display: inline-block;
+}
+
+.station-name h2 {
+  margin: 5px;
+}
+
+.line-icon {
+  width: 20px;
+  /*height: 30px;*/
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.delete-x {
+  display: inline-block;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+#map-canvas {
+  /*background-color: gray;*/
+  height: 400px;
+  width: 600px;
+  box-shadow: 3px 3px 2px #b5b5b5;
+}
+
+#red {
+  background-color: #C60C30;
+}
+
+#blue {
+  background-color: #00A1DE;
+}
+
+#brown {
+  background-color: #62361B;
+}
+
+#green {
+  background-color: #009B3A;
+}
+
+#orange {
+  background-color: #F9461C;
+}
+
+#purple {
+  background-color: #522398;
+}
+
+#pink {
+  background-color: #E27EA6;
+}
+
+#yellow {
+  background-color: #F9E300;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

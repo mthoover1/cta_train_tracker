@@ -1,0 +1,41 @@
+/*Red     #C60C30
+Blue    #00A1DE
+Brown   #62361B
+Green   #009B3A
+Orange  #F9461C
+Purple  #522398
+Pink    #E27EA6
+Yellow  #F9E300
+*/
+
+.line-red {
+  background-color: #C60C30;
+}
+
+.line-blue {
+  background-color: #00A1DE;
+}
+
+.line-brown {
+  background-color: #62361B;
+}
+
+.line-green {
+  background-color: #009B3A;
+}
+
+.line-orange {
+  background-color: #F9461C;
+}
+
+.line-purple {
+  background-color: #522398;
+}
+
+.line-pink {
+  background-color: #E27EA6;
+}
+
+.line-yellow {
+  background-color: #F9E300;
+}

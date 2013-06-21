@@ -1,0 +1,49 @@
+<h1>Some CTA/Maps Train Thing...</h1>
+
+
+<% @lines.each do |line| %>
+  <div class="line" id="<%= line.name.downcase %>">
+    <a href="/lines/<%= line.id %>"><h2><%= line.name %></h2>  
+  </div>
+<% end %>
+
+<!-- 
+
+
+<div class="line" id="red">
+  <a href="/lines/1"></a><h2>Red</h2>  
+</div>
+
+<div class="line" id="blue">
+  <h2>Blue</h2> 
+</div>
+
+<div class="line" id="brown">
+  <h2>Brown</h2> 
+</div>
+
+
+<div class="line" id="green">
+  <h2>Green</h2> 
+</div>
+
+
+<div class="line" id="orange">
+  <h2>Orange</h2> 
+</div>
+
+
+<div class="line" id="purple">
+  <h2>Purple</h2> 
+</div>
+
+
+<div class="line" id="pink">
+  <h2>Pink</h2> 
+</div>
+
+
+<div class="line" id="yellow">
+  <h2>Yellow</h2> 
+</div> -->
+
