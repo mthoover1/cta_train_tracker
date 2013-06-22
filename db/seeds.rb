@@ -129,7 +129,7 @@ station.lines << Line.find_by_id(7)
 station = Station.create(name: "Central", stop_id: 40280, latitude: 41.88720, longitude: -87.76507)
 station.lines << Line.find_by_id(4)
 
-station = Station.create(name: "Central (Purple)", stop_id: 41250, latitude: 42.06425, longitude: -87.68610)
+station = Station.create(name: "Central", stop_id: 41250, latitude: 42.06425, longitude: -87.68610)
 station.lines << Line.find_by_id(6)
 
 station = Station.create(name: "Cermak-Chinatown", stop_id: 41000, latitude: 41.85268, longitude: -87.63043)
@@ -172,7 +172,7 @@ station = Station.create(name: "Clinton", stop_id: 41160, latitude: 41.88570, lo
 station.lines << Line.find_by_id(4)
 station.lines << Line.find_by_id(7)
 
-station = Station.create(name: "Conservatory", stop_id: 41670, latitude: 41.88490, longitude: -87.71652)
+station = Station.create(name: "Conservatory-Central Park Drive", stop_id: 41670, latitude: 41.88490, longitude: -87.71652)
 station.lines << Line.find_by_id(4)
 
 station = Station.create(name: "Cumberland", stop_id: 40230, latitude: 41.98427, longitude: -87.83737)
@@ -388,86 +388,119 @@ station.lines << Line.find_by_id(2)
 station = Station.create(name: "Oak Park", stop_id: 41350, latitude: 41.88677, longitude: -87.79438)
 station.lines << Line.find_by_id(4)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Oakton-Skokie", stop_id: 41680, latitude: 42.0273, longitude: -87.7476)
+station.lines << Line.find_by_id(8)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "O'Hare", stop_id: 40890, latitude: 41.97767, longitude: -87.90387)
+station.lines << Line.find_by_id(2)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Paulina", stop_id: 41310, latitude: 41.94377, longitude: -87.67130)
+station.lines << Line.find_by_id(3)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Polk", stop_id: 41030, latitude: 41.87150, longitude: -87.66955)
+station.lines << Line.find_by_id(7)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Pulaski", stop_id: 40150, latitude: 41.85397, longitude: -87.72468)
+station.lines << Line.find_by_id(7)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Pulaski", stop_id: 40920, latitude: 41.87382, longitude: -87.72523)
+station.lines << Line.find_by_id(2)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Pulaski", stop_id: 40030, latitude: 41.88550, longitude: -87.72562)
+station.lines << Line.find_by_id(4)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Pulaski", stop_id: 40960, latitude: 41.80033, longitude: -87.72330)
+station.lines << Line.find_by_id(5)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Quincy/Wells", stop_id: 40040, latitude: 41.87882, longitude: -87.63382)
+station.lines << Line.find_by_id(3)
+station.lines << Line.find_by_id(5)
+station.lines << Line.find_by_id(6)
+station.lines << Line.find_by_id(7)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Racine", stop_id: 40470, latitude: 41.87580, longitude: -87.65695)
+station.lines << Line.find_by_id(2)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Randolph/Wabash", stop_id: 40200, latitude: 41.88447, longitude: -87.62628)
+station.lines << Line.find_by_id(3)
+station.lines << Line.find_by_id(4)
+station.lines << Line.find_by_id(5)
+station.lines << Line.find_by_id(6)
+station.lines << Line.find_by_id(7)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Ridgeland", stop_id: 40610, latitude: 41.88690, longitude: -87.78447)
+station.lines << Line.find_by_id(4)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Rockwell", stop_id: 41010, latitude: 41.96630, longitude: -87.69378)
+station.lines << Line.find_by_id(3)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Roosevelt", stop_id: 41400, latitude: 41.86732, longitude: -87.62737)
+station.lines << Line.find_by_id(1)
+station.lines << Line.find_by_id(4)
+station.lines << Line.find_by_id(5)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Rosemont", stop_id: 40820, latitude: 41.98367, longitude: -87.86152)
+station.lines << Line.find_by_id(2)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Sedgwick", stop_id: 40800, latitude: 41.91045, longitude: -87.63870)
+station.lines << Line.find_by_id(3)
+station.lines << Line.find_by_id(6)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Sheridan", stop_id: 40080, latitude: 41.95400, longitude: -87.65470)
+station.lines << Line.find_by_id(1)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Dempster-Skokie", stop_id: 40140, latitude: 42.04060, longitude: -87.75250)
+station.lines << Line.find_by_id(8)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "South Boulevard", stop_id: 40840, latitude: 42.02727, longitude: -87.67867)
+station.lines << Line.find_by_id(6)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Southport", stop_id: 40360, latitude: 41.94390, longitude: -87.66407)
+station.lines << Line.find_by_id(3)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Sox-35th", stop_id: 40190, latitude: 41.83095, longitude: -87.63075)
+station.lines << Line.find_by_id(1)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "State/Lake", stop_id: 40260, latitude: 41.88582, longitude: -87.62800)
+station.lines << Line.find_by_id(3)
+station.lines << Line.find_by_id(4)
+station.lines << Line.find_by_id(5)
+station.lines << Line.find_by_id(6)
+station.lines << Line.find_by_id(7)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Thorndale", stop_id: 40880, latitude: 41.99028, longitude: -87.65938)
+station.lines << Line.find_by_id(1)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "UIC-Halsted", stop_id: 40350, latitude: 41.87553, longitude: -87.64730)
+station.lines << Line.find_by_id(2)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Washington/Wells", stop_id: 40730, latitude: 41.88325, longitude: -87.63393)
+station.lines << Line.find_by_id(3)
+station.lines << Line.find_by_id(5)
+station.lines << Line.find_by_id(6)
+station.lines << Line.find_by_id(7)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Washington", stop_id: 40370, latitude: 41.88323, longitude: -87.62945)
+station.lines << Line.find_by_id(2)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Wellington", stop_id: 41210, latitude: 41.93637, longitude: -87.65337)
+station.lines << Line.find_by_id(3)
+station.lines << Line.find_by_id(6)
 
-# station = Station.create(name: "", stop_id: , latitude: , longitude: )
-# station.lines << Line.find_by_id()
+station = Station.create(name: "Western", stop_id: 41480, latitude: 41.96637, longitude: -87.68897)
+station.lines << Line.find_by_id(3)
+
+station = Station.create(name: "Western", stop_id: 40740, latitude: 41.85422, longitude: -87.68567)
+station.lines << Line.find_by_id(7)
+
+station = Station.create(name: "Western (O'Hare)", stop_id: 40670, latitude: 41.91628, longitude: -87.68757)
+station.lines << Line.find_by_id(2)
+
+station = Station.create(name: "Western (Forest Park)", stop_id: 40220, latitude: 41.87547, longitude: -87.68635)
+station.lines << Line.find_by_id(2)
+
+station = Station.create(name: "Western", stop_id: 40310, latitude: 41.80453, longitude: -87.68445)
+station.lines << Line.find_by_id(5)
+
+station = Station.create(name: "Wilson", stop_id: 40540, latitude: 41.96562, longitude: -87.65812)
+station.lines << Line.find_by_id(1)

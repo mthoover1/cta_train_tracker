@@ -1,4 +1,23 @@
-<div class="station-header"><h2><%= @station.name %></h2></div>
+<!-- <div class="station-header"><h2><%= @station.name %></h2></div> -->
+
+
+
+
+<div class="station-header">
+	<div class="sh-left">
+		<% @station.lines.each do |line| %>
+		<div class="station-color" style="height: <%= (1.0 / @station.lines.count * 100).to_s %>%; background-color: <%= line.color %>">
+		</div>
+		<% end %>
+	</div>
+	<div class="sh-center"><h2><%= @station.name %></div>
+	<div class="sh-right">
+		<% @station.lines.each do |line| %>
+		<div class="station-color" style="height: <%= (1.0 / @station.lines.count * 100).to_s %>%; background-color: <%= line.color %>">
+		</div>
+		<% end %>
+	</div>
+</div>
 
 <div class="add-station"><a href="/add/station/<%= @station.id %>">Add to MyStations</a></div>
 

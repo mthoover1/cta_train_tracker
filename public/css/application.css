@@ -97,9 +97,41 @@ th {
 }
 
 .station-header {
+  width: 100%;
   font-size: 40px;
-  padding-left: 20px;
+  margin: 40px 0;
+  /*padding-left: 20px;*/
   display: inline-block;
+  /*background-color: gray;*/
+}
+
+.sh-left {
+  float: left;
+  width: 80px;
+  height: 70px;
+}
+
+.sh-center {
+  float: left;
+  height: 70px;
+  background-color: #636363;
+  padding: 0 30px;
+}
+
+.sh-center h2 {
+  margin: 0;
+  line-height: 70px;
+  color: white;
+}
+
+.sh-right {
+  width: 80px;
+  float: left;
+  height: 70px;
+}
+
+.station-color {
+  width: 100%;
 }
 
 .add-station {
