@@ -38,6 +38,7 @@ end
 
 get '/stations/:station_id' do
   @station = Station.find_by_id(params[:station_id])
+  @profile_presence = current_user.stations.find(:all, :conditions => { :id => @station.id })
   erb :station
 end
 
@@ -56,7 +57,7 @@ end
 
 post '/delete/station/:station_id' do
   current_user.user_stations.find_by_station_id(params[:station_id]).destroy
-  redirect '/profile'
+  redirect "/stations/#{params[:station_id]}"
 end
 
 get '/delete/station/:station_id' do

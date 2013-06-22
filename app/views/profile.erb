@@ -6,7 +6,7 @@
     <% station.lines.each do |line| %>
       <div class="line-icon" id="<%= line.name.downcase %>">&nbsp;</div>
     <% end %>
-    <div class="delete-station">
+    <div class="delete-station-x">
     	<a href="/delete/station/<%= station.id %>">x</a>
     	<input id="delete-station-id" type="hidden" value="<%= station.id %>">
     </div>

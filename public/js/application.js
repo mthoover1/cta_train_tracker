@@ -6,8 +6,25 @@ $(document).ready(function() {
     id = $('input#add-station-id').val();
     url = '/add/station/' + id;    
 
-    $.post(url);
+    $.post(url, function() {
+      $('.add-station').addClass('hidden');
+      $('.delete-station').removeClass('hidden');
+    });
   });
+
+
+  $('.delete-station form').submit(function(event) {
+    event.preventDefault();
+
+    id = $('input#delete-station-id').val();
+    url = '/delete/station/' + id;    
+
+    $.post(url, function() {
+      $('.delete-station').addClass('hidden');
+      $('.add-station').removeClass('hidden');
+    });
+  });
+
 
   $('.delete-station a').click(function(event) {
     event.preventDefault();

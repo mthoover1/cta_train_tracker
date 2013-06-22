@@ -13,6 +13,12 @@ nav {
   background-color: #B3DDF2;
 }
 
+.hidden {
+  visibility: hidden;
+  position: absolute;
+  left: -2000px;
+}
+
 #title {
   display: inline;
 }
@@ -138,7 +144,7 @@ th {
   width: 100%;
 }
 
-.add-station {
+.add-station, .delete-station {
   float: right;
   display: inline-block;
   margin-top: 20px;
@@ -166,10 +172,14 @@ input#add-station-submit {
   border-radius: 5px;
 }
 
-.delete-station {
+.delete-station-x {
   display: inline-block;
   padding-left: 10px;
   font-weight: bold;
+}
+
+input#delete-station-submit {
+  width: auto;
 }
 
 #map-canvas {

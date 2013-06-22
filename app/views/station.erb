@@ -20,29 +20,37 @@
 </div>
 
 <% if current_user %>
-	<% unless current_user.stations.find(@station.id) %>
-	<div class="add-station">
-		<form action="/add/station/<%= @station.id %>" method="post">
-			<input id="add-station-id" type="hidden" value="<%= @station.id %>">
-			<input id="add-station-submit" type="submit" value="Add to MyStations">
-		</form>
-	</div>
+	<% if @profile_presence.empty? %>
+		<div class="add-station">
+			<form action="/add/station/<%= @station.id %>" method="post">
+				<input id="add-station-id" type="hidden" value="<%= @station.id %>">
+				<input id="add-station-submit" type="submit" value="Add to MyStations">
+			</form>
+		</div>
+		<div class="delete-station hidden">
+			<form action="/delete/station/<%= @station.id %>" method="post">
+				<input id="delete-station-id" type="hidden" value="<%= @station.id %>">
+				<input id="delete-station-submit" type="submit" value="Remove Station">
+			</form>
+		</div>
+	<% else %>
+		<div class="delete-station">
+			<form action="/delete/station/<%= @station.id %>" method="post">
+				<input id="delete-station-id" type="hidden" value="<%= @station.id %>">
+				<input id="delete-station-submit" type="submit" value="Remove Station">
+			</form>
+		</div>
+		<div class="add-station hidden">
+			<form action="/add/station/<%= @station.id %>" method="post">
+				<input id="add-station-id" type="hidden" value="<%= @station.id %>">
+				<input id="add-station-submit" type="submit" value="Add to MyStations">
+			</form>
+		</div>
 	<% end %>
-	<% if current_user.stations.find(@station.id) %>
-	<div class="add-station">
-		<form action="/add/station/<%= @station.id %>" method="post">
-			<input id="add-station-id" type="hidden" value="<%= @station.id %>">
-			<input id="add-station-submit" type="submit" value="Remove from MyStations">
-		</form>
-	</div>
-	<% end %>
-
 <% end %>
 
+
 <div id="map-canvas"></div>
-
-
-
 
 <input type=hidden id="latitude" value="<%= @station.latitude %>">
 <input type=hidden id="longitude" value="<%= @station.longitude %>">
