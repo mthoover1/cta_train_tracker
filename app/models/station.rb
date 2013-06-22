@@ -5,4 +5,5 @@ class Station < ActiveRecord::Base
   has_many :users, :through => :user_stations
 
   validates :stop_id, uniqueness: true
+  validates_uniqueness_of :latitude, :scope => :longitude
 end

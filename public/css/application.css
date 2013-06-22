@@ -9,8 +9,8 @@ nav {
   left: 0;
   right: 0;*/
   width: 100%;
-  height: 50px;
-  background-color: gray;
+  height: 56px;
+  background-color: #B3DDF2;
 }
 
 #title {
@@ -22,10 +22,11 @@ nav {
 
 #title a, #title a:hover, #title a:visited {
   color: white;
-  font-size: 28px;
-  line-height: 50px;
+  font-size: 32px;
+  line-height: 56px;
   padding-left: 15px;
   text-decoration: none;
+  /*text-shadow: 2px 2px #FF0000;*/
 }
 
 
@@ -39,14 +40,15 @@ nav {
 }
 
 #nav-links a, #nav-links a:visited {
-  color: white;
+  color: #FF0000;
   font-size: 16px;
-  line-height: 50px;
+  line-height: 56px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 #nav-links a:hover {
-  color: yellow;
+  color: #FF0000;
 }
 
 .container {
@@ -69,13 +71,6 @@ form input{
 
 th {
   text-align: left;
-}
-
-.vertical-map {
-  height: 500px;
-  width: 26px;
-  float: left;
-  margin-right: 10px;
 }
 
 .line {
@@ -123,10 +118,10 @@ th {
 }
 
 .line-icon {
-  width: 20px;
+  width: 18px;
   /*height: 30px;*/
   display: inline-block;
-  margin: 0;
+  margin: -10px 0 0 0;
   padding: 0;
   border-radius: 5px;
 }
@@ -174,6 +169,26 @@ th {
 
 #yellow {
   background-color: #F9E300;
+}
+
+.vertical-map {
+  width: 26px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 20px;
+  padding: 0px;
+}
+
+.vertical-map-dot {
+  background-color: white;
+  border-radius: 100%;
+  height: 18px;
+  width: 18px;
+  margin: 20px auto;
+}
+
+.vertical-map-dot:first-child {
+  margin-top: 10px;
 }
 
 a {
