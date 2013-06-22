@@ -1,11 +1,12 @@
 <!-- <h1>Some CTA/Maps Train Thing...</h1> -->
 
-
-<% @lines.each do |line| %>
-  <div class="line" id="<%= line.name.downcase %>">
-    <a href="/lines/<%= line.id %>"><h2><%= line.name %></h2>  
-  </div>
-<% end %>
+<div id="line-list-container">
+  <% @lines.each do |line| %>
+    <div class="line" id="<%= line.name.downcase %>">
+      <a href="/lines/<%= line.id %>"><h2><%= line.name %></h2>  
+    </div>
+  <% end %>
+</div>
 
 <!-- 
 

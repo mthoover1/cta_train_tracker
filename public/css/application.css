@@ -30,7 +30,7 @@ nav {
   color: white;
   font-size: 32px;
   line-height: 56px;
-  padding-left: 15px;
+  padding-left: 20px;
   text-decoration: none;
   /*text-shadow: 2px 2px #FF0000;*/
 }
@@ -38,6 +38,7 @@ nav {
 
 #nav-links {
   display: inline;
+  float: right;
 }
 
 #nav-links div {
@@ -51,6 +52,7 @@ nav {
   line-height: 56px;
   text-decoration: none;
   font-weight: bold;
+  padding-right: 20px;
 }
 
 #nav-links a:hover {
@@ -77,6 +79,10 @@ form input{
 
 th {
   text-align: left;
+}
+
+div#line-list-container {
+  margin-top: 40px;
 }
 
 .line {
