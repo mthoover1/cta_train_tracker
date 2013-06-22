@@ -1,4 +1,30 @@
 $(document).ready(function() {
+
+  $('.add-station form').submit(function(event) {
+    event.preventDefault();
+
+    id = $('input#add-station-id').val();
+    url = '/add/station/' + id;    
+
+    $.post(url);
+  });
+
+  $('.delete-station a').click(function(event) {
+    event.preventDefault();
+
+    id = $(this).next().val();
+    url = '/delete/station/' + id;
+    
+    $.post(url);
+
+    stationDiv = $(this).parent().parent();
+
+    stationDiv.hide('slow', function() {
+      stationDiv.remove();
+    })
+  });
+
+
   google.maps.visualRefresh = true;
 
   var latitude = $('#latitude').val();

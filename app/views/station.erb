@@ -19,8 +19,14 @@
 	</div>
 </div>
 
-<div class="add-station"><a href="/add/station/<%= @station.id %>">Add to MyStations</a></div>
+<!-- <div class="add-station"><a href="/add/station/<%= @station.id %>">Add to MyStations</a></div> -->
 
+<div class="add-station">
+	<form action="/add/station/id" method="post">
+		<input id="add-station-id" type="hidden" value="<%= @station.id %>">
+		<input type="submit" value="Add to MyStations">
+	</form>
+</div>
 
 <div id="map-canvas"></div>
 
