@@ -19,14 +19,25 @@
 	</div>
 </div>
 
-<!-- <div class="add-station"><a href="/add/station/<%= @station.id %>">Add to MyStations</a></div> -->
+<% if current_user %>
+	<% unless current_user.stations.find(@station.id) %>
+	<div class="add-station">
+		<form action="/add/station/<%= @station.id %>" method="post">
+			<input id="add-station-id" type="hidden" value="<%= @station.id %>">
+			<input id="add-station-submit" type="submit" value="Add to MyStations">
+		</form>
+	</div>
+	<% end %>
+	<% if current_user.stations.find(@station.id) %>
+	<div class="add-station">
+		<form action="/add/station/<%= @station.id %>" method="post">
+			<input id="add-station-id" type="hidden" value="<%= @station.id %>">
+			<input id="add-station-submit" type="submit" value="Remove from MyStations">
+		</form>
+	</div>
+	<% end %>
 
-<div class="add-station">
-	<form action="/add/station/id" method="post">
-		<input id="add-station-id" type="hidden" value="<%= @station.id %>">
-		<input type="submit" value="Add to MyStations">
-	</form>
-</div>
+<% end %>
 
 <div id="map-canvas"></div>
 
