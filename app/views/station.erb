@@ -51,7 +51,14 @@
 
 
 <div class="data-container">
-	
+	<% trains = CTA::TrainTracker.arrivals stpid: "30079" %>
+	<% trains.each do |train| %>
+	<p>Line: <%= train.rt %></p>
+	<p>Desination: <%= train.destNm %></p>
+	<p>Arriving at: <%= train.arrT %></p>
+	<% end %>
+
+
 </div>
 
 

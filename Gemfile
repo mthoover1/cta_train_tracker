@@ -17,6 +17,8 @@ gem 'bcrypt-ruby'
 
 gem 'rake'
 
+gem 'cta-api'
+
 gem 'shotgun'
 
 group :test do
