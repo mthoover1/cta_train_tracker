@@ -26,7 +26,7 @@ $(document).ready(function() {
   });
 
 
-  $('.delete-station a').click(function(event) {
+  $('.delete-station-x a').click(function(event) {
     event.preventDefault();
 
     id = $(this).next().val();
