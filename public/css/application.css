@@ -182,6 +182,13 @@ input#delete-station-submit {
   width: auto;
 }
 
+.data-container {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+  background-color: gray;
+}
+
 #map-canvas {
   /*background-color: gray;*/
   height: 400px;
