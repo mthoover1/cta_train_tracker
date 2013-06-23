@@ -1,8 +1,3 @@
-<!-- <div class="station-header"><h2><%= @station.name %></h2></div> -->
-
-
-
-
 <div class="station-header">
 	<div class="sh-left">
 		<% @station.lines.each do |line| %>
@@ -18,6 +13,7 @@
 		<% end %>
 	</div>
 </div>
+
 
 <% if current_user %>
 	<% if @profile_presence.empty? %>
@@ -51,14 +47,26 @@
 
 
 <div class="data-container">
-	<% trains = CTA::TrainTracker.arrivals stpid: "30079" %>
-	<% trains.each do |train| %>
-	<p>Line: <%= train.rt %></p>
-	<p>Desination: <%= train.destNm %></p>
-	<p>Arriving at: <%= train.arrT %></p>
+	<% @station.stops.order("direction").each do |stop| %>
+		<div class="stop">
+			<h2><%= stop.direction %></h2>
+			<% @trains = CTA::TrainTracker.arrivals stpid: stop.cta_id %>
+			<% @trains.each {|train| p train } %>
+			<% sort_arrivals(@trains).each do |train| %>
+				<div class="train" id="<%= train.rt.downcase %>">
+					<div class="train-dest"><%= train.destNm %></div>
+					<div class="train-time">
+						<span><%= time(train.arrT) %>
+						<% if train.isSch == "1" %>
+							<%= "*" %>
+						<% end %>
+					</span>
+					</div>
+				</div>
+			<% end %>
+		</div>
 	<% end %>
-
-
+	<h4>* scheduled</h4>
 </div>
 
 

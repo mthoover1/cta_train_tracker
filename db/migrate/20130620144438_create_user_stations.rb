@@ -3,6 +3,8 @@ class CreateUserStations < ActiveRecord::Migration
     create_table :user_stations do |t|
       t.integer :user_id
       t.integer :station_id
+      
+      t.timestamps
     end
   end
 end

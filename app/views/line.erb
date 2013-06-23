@@ -1,6 +1,6 @@
 <div class="line-header" id="<%= @line.name.downcase %>"><h2><%= @line.name %></h2></div>
 
-<div class="vertical-map" style="background-color: <%= @line.color %>; height: <%= @line.stations.count * 38 %>px">
+<div class="vertical-map" style="background-color: <%= @line.color %>; height: <%= @line.stations.count * 37.75 %>px">
   <% @line.stations.count.times do %>
 		<div class="vertical-map-dot"></div>
 	<% end %>
@@ -9,7 +9,7 @@
 <%# @line.stations.order("latitude").reverse_order.each do |station| %>
 <% @line.stations.each do |station| %>
   <div>
-   <div class="station-name"><a href="/stations/<%= station.id %>"><h2><%= station.name %></h2></a></div>
+   <div class="station-name"><a href="/stations/<%= station.cta_id %>"><h2><%= station.name %></h2></a></div>
 
     <% station.lines.each do |line| %>
       <% if line.name != @line.name %>

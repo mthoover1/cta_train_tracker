@@ -37,7 +37,7 @@ get '/lines/:line_id' do
 end
 
 get '/stations/:station_id' do
-  @station = Station.find_by_id(params[:station_id])
+  @station = Station.find_by_cta_id(params[:station_id])
   @profile_presence = current_user.stations.find(:all, :conditions => { :id => @station.id })
   erb :station
 end

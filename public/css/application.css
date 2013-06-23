@@ -10,7 +10,14 @@ nav {
   right: 0;*/
   width: 100%;
   height: 56px;
-  background-color: #B3DDF2;
+  background: #000000; /* Old browsers */
+  background: -moz-linear-gradient(top,  #000000 0%, #383838 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#383838)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #000000 0%,#383838 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #000000 0%,#383838 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #000000 0%,#383838 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #000000 0%,#383838 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#383838',GradientType=0 ); /* IE6-9 */
 }
 
 .hidden {
@@ -28,7 +35,8 @@ nav {
 
 #title a, #title a:hover, #title a:visited {
   color: white;
-  font-size: 32px;
+  font-size: 34px;
+  font-weight: bold;
   line-height: 56px;
   padding-left: 20px;
   text-decoration: none;
@@ -56,7 +64,7 @@ nav {
 }
 
 #nav-links a:hover {
-  color: #FF0000;
+  color: #B3DDF2;
 }
 
 .container {
@@ -96,6 +104,10 @@ div#line-list-container {
 
 .line a {
   text-decoration: none;
+  color: white;
+}
+
+#yellow a {
   color: black;
 }
 
@@ -111,12 +123,17 @@ div#line-list-container {
 .line-header h2 {
   margin-top: 30px;
   margin-bottom: 20px;
+  color: white;
+}
+
+#yellow h2 {
+  color: black;
 }
 
 .station-header {
   /*width: 100%;*/
   font-size: 40px;
-  margin: 40px 0;
+  margin: 40px 0 10px 0;
   /*padding-left: 20px;*/
   display: inline-block;
   /*background-color: gray;*/
@@ -190,10 +207,42 @@ input#delete-station-submit {
 }
 
 .data-container {
-  width: 100%;
-  height: 500px;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+
+.stop {
   margin-bottom: 20px;
-  background-color: gray;
+}
+
+.stop h2 {
+  margin: 20px 0 0 0;
+}
+
+.train {
+  height: 100px;
+  width: 110px;
+  /*float: left;*/
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.train-dest {
+  width: 100%;
+  height: 39px;
+  border-bottom: 1px solid gray;
+  line-height: 39px;
+  font-size: 14px;
+}
+
+.train-time {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 36px;
 }
 
 #map-canvas {
@@ -211,19 +260,19 @@ input#delete-station-submit {
   background-color: #00A1DE;
 }
 
-#brown {
+#brown, #brn {
   background-color: #62361B;
 }
 
-#green {
+#green, #g {
   background-color: #009B3A;
 }
 
-#orange {
+#orange, #org {
   background-color: #F9461C;
 }
 
-#purple {
+#purple, #p {
   background-color: #522398;
 }
 
@@ -231,8 +280,9 @@ input#delete-station-submit {
   background-color: #E27EA6;
 }
 
-#yellow {
+#yellow, #y {
   background-color: #F9E300;
+  color: black;
 }
 
 .vertical-map {
@@ -248,7 +298,7 @@ input#delete-station-submit {
   border-radius: 100%;
   height: 18px;
   width: 18px;
-  margin: 20px auto;
+  margin: 19.75px auto 19.75px auto;
 }
 
 .vertical-map-dot:first-child {
