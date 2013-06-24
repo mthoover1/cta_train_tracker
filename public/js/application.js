@@ -3,6 +3,8 @@ $(document).ready(function() {
   $('.add-station form').submit(function(event) {
     event.preventDefault();
 
+    console.log('got there add');
+
     id = $('input#add-station-id').val();
     url = '/add/station/' + id;    
 
@@ -15,6 +17,8 @@ $(document).ready(function() {
 
   $('.delete-station form').submit(function(event) {
     event.preventDefault();
+
+    console.log('got there delete');
 
     id = $('input#delete-station-id').val();
     url = '/delete/station/' + id;    

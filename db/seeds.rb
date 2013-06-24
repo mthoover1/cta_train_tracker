@@ -555,7 +555,7 @@ station.lines << Line.find_by_id(6)
 station.stops << Stop.create(cta_id: 30052, direction: "Northbound")
 station.stops << Stop.create(cta_id: 30053, direction: "Southbound")
 
-station = Station.create(name: "Marchandise Mart", cta_id: 40460, latitude: 41.88803, longitude: -87.63412)
+station = Station.create(name: "Merchandise Mart", cta_id: 40460, latitude: 41.88803, longitude: -87.63412)
 station.lines << Line.find_by_id(3)
 station.lines << Line.find_by_id(6)
 station.stops << Stop.create(cta_id: 30090, direction: "Northbound")
