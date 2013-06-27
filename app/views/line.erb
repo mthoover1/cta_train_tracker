@@ -1,6 +1,6 @@
 <div class="line-header" id="<%= @line.name.downcase %>"><h2><%= @line.name %></h2></div>
 
-<div class="vertical-map" style="background-color: <%= @line.color %>; height: <%= @line.stations.count * 37.75 %>px">
+<div class="vertical-map" style="background-color: <%= @line.color %>; height: <%= @line.stations.count * 37.9 %>px">
   <% @line.stations.count.times do %>
 		<div class="vertical-map-dot"></div>
 	<% end %>
